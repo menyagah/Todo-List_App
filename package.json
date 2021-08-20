@@ -36,5 +36,8 @@
     "webpack-dev-server": "^4.0.0",
     "webpack-lighthouse-plugin": "^1.0.9",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
