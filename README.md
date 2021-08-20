@@ -39,12 +39,12 @@
   <p align="center">
     A TO-DO List App
     <br />
-    <a href="https://github.com/menyagah/Telegram_Bot/tree/feature"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/menyagah/Todo-List_App/tree/feature"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/menyagah/Telegram_Bot/issues">Report Bug</a>
+    <a href="https://github.com/menyagah/Todo-List_App/issues">Report Bug</a>
     ·
-    <a href="https://github.com/menyagah/Telegram_Bot/issues">Request Feature</a>
+    <a href="https://github.com/menyagah/Todo-List_App/issues">Request Feature</a>
   </p>
 </p>
 
@@ -66,9 +66,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![image](https://user-images.githubusercontent.com/24241962/103855134-0b198a00-50c3-11eb-9be4-ea26a668b32d.png)
-
-This is a simple To-Do list app that a user can use to add items remove and mark items as complete. The app stores its data in the local-storage hence data is persistent. Use this [link](https://raw.githack.com/menyagah/Awesome-books/feature/index.html link to view the project
+This is a simple To-Do list app that a user can use to add items remove and mark items as complete. The app stores its data in the local-storage hence data is persistent. Use this [link](https://fierce-inlet-77592.herokuapp.com/) link to view the project
 
 ### Built With
 
@@ -81,13 +79,6 @@ This is a simple To-Do list app that a user can use to add items remove and mark
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
-
-* Ruby 
-    for linux users:
-    ```sh
-    $ sudo apt-get install ruby-full
-    ```
 
 ### Installation
 
@@ -108,7 +99,7 @@ To get a local copy up and running follow these simple steps.
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/menyagah/Telegram_Bot/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/menyagah/Todo-List_App/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -135,7 +126,7 @@ Martin Nyagah - [@Martinnyaga20](https://twitter.com/Martinnyaga20) - menyagah27
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [TelegramBotAPI](https://core.telegram.org/bots/api)
+* [WEBPACK](https://webpack.js.org/)
 * README Icon made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 
