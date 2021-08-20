@@ -18,3 +18,20 @@ li {
   display: inline;
   box-sizing: border-box;
 }
+
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.cardlist_main {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    flex-direction: column;
+    background-color: aqua;
+}
