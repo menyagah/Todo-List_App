@@ -68,7 +68,7 @@
 
 ![image](https://user-images.githubusercontent.com/24241962/103855134-0b198a00-50c3-11eb-9be4-ea26a668b32d.png)
 
-This is a simple To-Do list app that a user can use to add items remove and mark items as complete. The app stores its data in the local-storage hence data is persistent.
+This is a simple To-Do list app that a user can use to add items remove and mark items as complete. The app stores its data in the local-storage hence data is persistent. Use this [link](https://raw.githack.com/menyagah/Awesome-books/feature/index.html link to view the project
 
 ### Built With
 
@@ -94,56 +94,16 @@ To get a local copy up and running follow these simple steps.
 1. Clone the repo
 
     ```sh
-    git clone https://github.com/menyagah/Telegram_Bot.git
+    git clone https://github.com/menyagah/Todo-List_App.git
     ```
 
-2.  Telegram Bot Father
+2.  Setup
+    To get a local copy up and running follow these simple example steps.
 
-    Having installed ruby, we also need to have a telegram account in order to obtain our A.P.I token code 
-    and also create the channel for our new bot. To do this we need the help of the bot father. So, search for BotFather on your telegram app. Tap on the channel and type /start. After that we only need to create a new bot so type /newbot and follow the instructions of the bot father. Copy the token given by bot father and paste it in the bot.rb file on the token variable. 
-
-3.  Set-up Chat Id
-
-    * Search for (Telegram Bot Raw) on your telegram app
-    * Type /start on the channel
-    * Copy your id from the json output. 
-      - It is labelled as "id" : xxxxxx
-
-
-4. Install dependencies 
-
-    ```sh
-    run bundle install
-    ```
-
-5. Start local server
-
-    ```sh
-    cd Telegram_bot/main
-    ```
-
-    then
-
-      
-    ```sh
-    ruby main.rb
-    ```
-    
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-![image](https://user-images.githubusercontent.com/24241962/103857734-1b803380-50c8-11eb-969a-583815c7465a.png)
-
-1. Open your telegram app. Navigate to BotFather and click on the link provided to your bot.
-2. Use the following commands to interact with the app
-   - `/start` - to start the bot
-   - `Phones` - to view the phones on sale
-   - `Iphone {5/6/8/10/11/12}` - to purchase the phone of your choice
-   - `Yes {5/6/8/10/11/12}` - to purchase a particular phone
-   - `Agent` - to send a notification to the customer care agents
+    Clone the repository to your computer using thislink
+    Cd into the folder
+    Open index.html with live server
+    Or you can Fork it instead, and create a pull request to suggest some changes
 
 <!-- ROADMAP -->
 ## Roadmap
