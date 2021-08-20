@@ -21,13 +21,14 @@ const todoList =  [{
 ];
 
 const card = document.querySelector('.cardlist_main');
-const liTop = document.createElement('li');
-liTop.innerHTML = `<li class="cardlist--sub main">Today's To Do</li>
+card.innerHTML += `<li class="cardlist--sub main">Today's To Do</li>
 <li ><input type="text" class="cardlist--sub  input" placeholder="Add to your list..."></li>`
-card.appendChild(liTop)
-todoList.forEach(({description, completed, id}) => {
-    const li = document.createElement('li')
-    li.innerHTML = `
+
+todoList.forEach(({description}) => {
+    card.innerHTML += `
     <li class="cardlist--sub"><input type="checkbox" name="" class="cardlist--check" id="">${description}</li>`
-    card.appendChild(li)
 });
+
+card.innerHTML += `<li class="cardlist--sub delete"><a href="#" class="delete_text">clear all completed</a></li>`
+
+

@@ -64,9 +64,9 @@ li input {
     background-color: #eee;
   }
   
-  .input:focus {
+.input:focus {
     outline: none;
-  }
+}
 
 textarea {
     border: none;
@@ -77,4 +77,16 @@ textarea {
 
 textarea:focus {
     outline: none;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+}
+
+.delete_text {
+    color: gray;
+    font-weight: 100;
+    text-decoration: none;
 }
