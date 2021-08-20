@@ -1,4 +1,20 @@
-body {
-    background-color: green;
-    background: url('./assets/001\ \(2\).jpg');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+}
+
+body,
+ul,
+li {
+  font-family: "Lato", sans-serif;
+  list-style: none;
+  display: inline;
+  box-sizing: border-box;
 }
