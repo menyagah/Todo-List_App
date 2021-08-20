@@ -21,72 +21,72 @@ li {
   box-sizing: border-box;
 }
 
-.grid-container{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color:  #eee;
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: #eee;
 }
 
 .cardlist_main {
-    display: flex;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    flex-direction: column;
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  flex-direction: column;
 }
 
 .cardlist--sub {
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    box-shadow: 0 8px 6px -6px silver;
-    height: 9vh;
-    margin: 1px;
-    background-color: white;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 0 8px 6px -6px silver;
+  height: 9vh;
+  margin: 1px;
+  background-color: white;
 }
 
 input.cardlist--check {
-   margin: 6px;
+  margin: 6px;
 }
 
-.input{
-    width: 100%;
+.input {
+  width: 100%;
 }
 
 li input {
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: hidden;
-    background-color: #eee;
-  }
-  
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #eee;
+}
+
 .input:focus {
-    outline: none;
+  outline: none;
 }
 
 textarea {
-    border: none;
-    background-color: transparent;
-    resize: none;
-    outline: none;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
 }
 
 textarea:focus {
-    outline: none;
+  outline: none;
 }
 
 .delete {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  background-color: rgb(238, 238, 238);
 }
 
 .delete_text {
-    color: gray;
-    font-weight: 100;
-    text-decoration: none;
+  color: gray;
+  font-weight: 100;
+  text-decoration: none;
 }
