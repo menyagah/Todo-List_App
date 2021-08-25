@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');// eslint-disable-line 
 module.exports = {
   entry: './src/index.js',
   plugins: [new HtmlWebpackPlugin({
-    template: './src/template.html',
+    template: './src/index.html',
   })],
 
   module: {
