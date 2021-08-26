@@ -18,9 +18,8 @@ const todoItems = [{
 },
 ];
 
-
-if(!localStorage.getItem('todo' )){
-  localStorage.setItem('todo', JSON.stringify(todoItems))
+if (!localStorage.getItem('todo')) {
+  localStorage.setItem('todo', JSON.stringify(todoItems));
 }
 const card = document.querySelector('.cardlist_main');
 card.innerHTML += `<li class="cardlist--sub main">Today's To Do</li>
@@ -36,14 +35,10 @@ todoList.forEach(({ description, id, completed }) => {
 
 card.innerHTML += '<li class="cardlist--sub delete"><a href="#" class="delete_text">clear all completed</a></li>';
 
-for (let i = 0; i < todoList.length; i++) {
+for (let i = 0; i < todoList.length; i += 1) {
   const inCheck = document.querySelector(`#check-${todoList[i].id}`);
   inCheck.addEventListener('input', (e) => {
     checkItem(i, e, todoList);
-    console.log(todoList)
-    localStorage.setItem('todo', JSON.stringify(todoList)); 
+    localStorage.setItem('todo', JSON.stringify(todoList));
   });
 }
-
-
-console.log(todoList);
