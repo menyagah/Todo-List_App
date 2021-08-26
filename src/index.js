@@ -1,7 +1,7 @@
 import checkItem from './check.js';
 import './main.css';
 
-const todoList = [{
+const todoItems = [{
   description: 'wash the dishes',
   completed: false,
   id: 1,
@@ -18,22 +18,32 @@ const todoList = [{
 },
 ];
 
+
+if(!localStorage.getItem('todo' )){
+  localStorage.setItem('todo', JSON.stringify(todoItems))
+}
 const card = document.querySelector('.cardlist_main');
 card.innerHTML += `<li class="cardlist--sub main">Today's To Do</li>
 <li ><input type="text" class="cardlist--sub  input" placeholder="Add to your list..."></li>`;
 
-todoList.forEach(({ description, id }) => {
+const todoList = JSON.parse(localStorage.getItem('todo') || '[]');
+todoList.forEach(({ description, id, completed }) => {
   const inputElement = document.createElement('input');
   inputElement.setAttribute('type', 'name');
   card.innerHTML += `
-    <li class="cardlist--sub"><input type="checkbox" name="" class="cardlist--check" id="check-${id}">${description}</li>`;
+    <li class="cardlist--sub"><input type="checkbox" name="" ${completed && 'checked'} class="cardlist--check" id="check-${id}">${description}</li>`;
 });
 
 card.innerHTML += '<li class="cardlist--sub delete"><a href="#" class="delete_text">clear all completed</a></li>';
 
-for (let i = 0; i < todoList.length; i++){
+for (let i = 0; i < todoList.length; i++) {
   const inCheck = document.querySelector(`#check-${todoList[i].id}`);
-  inCheck.addEventListener('input', (e)=> {
-    checkItem(i, e, todoList)
-  })
-};
+  inCheck.addEventListener('input', (e) => {
+    checkItem(i, e, todoList);
+    console.log(todoList)
+    localStorage.setItem('todo', JSON.stringify(todoList)); 
+  });
+}
+
+
+console.log(todoList);
