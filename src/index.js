@@ -1,6 +1,23 @@
 import checkItem from './check.js';
 import './main.css';
 
+const todoItems = [{
+  description: 'wash the dishes',
+  completed: false,
+  id: 1,
+},
+{
+  description: 'complete the dishes',
+  completed: false,
+  id: 2,
+},
+{
+  description: 'complete To Do list project',
+  completed: false,
+  id: 3,
+},
+];
+
 if (!localStorage.getItem('todo')) {
   localStorage.setItem('todo', JSON.stringify(todoItems));
 }
