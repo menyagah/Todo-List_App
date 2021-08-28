@@ -18,6 +18,7 @@ card.innerHTML += '<li class="cardlist--sub delete"><a href="#" class="delete_te
 
 addItem();
 
-
+// Then attach "input" event listeners on the input checkboxes of todo items
+attachInputEventListeners();
 
 clearAllBtn();

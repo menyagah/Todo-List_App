@@ -1,4 +1,3 @@
-import attachEventListeners from './attachEventListeners.js';
 // The responsibility of this function is to read from the localStorage and update the UI
 const displayItems = () => {
   // Get list container
@@ -14,11 +13,10 @@ const displayItems = () => {
     itemsContainer.innerHTML += `
     <li class="cardlist--sub">
       <input type="checkbox" name="" ${completed && 'checked'} class="cardlist--check" id="check-${id}">
-      ${description} <button id="deleteBtn-${id}">DELETE</button>
+      ${description}
+      <button id="deleteBtn-${id}">DELETE</button>
     </li>`;
   });
-  // Then attach "input" event listeners on the input checkboxes of todo items
-  attachEventListeners();
 };
 
 export default displayItems;

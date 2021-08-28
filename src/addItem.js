@@ -1,5 +1,5 @@
 import displayItems from './displayList.js';
-
+import attachInputEventListeners from './attachEventListeners.js';
 
 const addItem = () => {
   const description = document.querySelector('.input');
@@ -21,6 +21,9 @@ const addItem = () => {
 
       // Update the UI (basically re-read from localStorage and display the list)
       displayItems();
+
+      // Then attach "input" event listeners on the input checkboxes of todo items
+      attachInputEventListeners();
     }
   });
 };
