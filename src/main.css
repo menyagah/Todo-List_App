@@ -23,7 +23,7 @@ li {
 
 .grid-container {
   display: grid;
-  height: 100vh;
+  height: auto;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   background-color: #eee;
@@ -64,6 +64,11 @@ li input {
   background-color: #eee;
 }
 
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
 .input:focus {
   outline: none;
 }
@@ -82,11 +87,11 @@ textarea:focus {
 .delete {
   display: flex;
   justify-content: center;
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(184, 178, 178);
 }
 
 .delete_text {
-  color: gray;
+  color: rgb(8, 4, 4);
   font-weight: 100;
   text-decoration: none;
 }
