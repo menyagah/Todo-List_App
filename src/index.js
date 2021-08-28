@@ -11,10 +11,14 @@ card.innerHTML += `<li ><ul class="items"></ul></li>`
 displayItems();
 card.innerHTML += '<li class="cardlist--sub delete"><a href="#" class="delete_text">clear all completed</a></li>';
 
-for (let i = 0; i < todoItem().length; i += 1) {
-  const inCheck = document.querySelector(`#check-${todoItem()[i].id}`);
+todoItem();
+const todoList = JSON.parse(localStorage.getItem('todo') || '[]');
+console.log('before', todoList);
+for (let i = 0; i < todoList.length; i += 1) {
+  const inCheck = document.getElementById(`check-${todoList[i].id}`);
   inCheck.addEventListener('input', (e) => {
-    checkItem(i, e, todoItem());
-    localStorage.setItem('todo', JSON.stringify(todoItem()));
+    checkItem(i, e, todoList);
+    console.log('after', todoList);
+    localStorage.setItem('todo', JSON.stringify(todoList)); 
   });
 }
