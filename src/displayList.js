@@ -3,7 +3,7 @@ const displayItems = () => {
   // Get list container
   const itemsContainer = document.querySelector('.items');
   // Remove all <li> from this container
-  itemsContainer.innerHTML = ''; 
+  itemsContainer.innerHTML = '';
 
   // Get and parse data from locaStorage
   const todoList = JSON.parse(localStorage.getItem('todo') || '[]');

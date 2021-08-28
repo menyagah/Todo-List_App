@@ -20,5 +20,4 @@ const attachInputEventListeners = () => {
   }
 };
 
-
 export default attachInputEventListeners;
